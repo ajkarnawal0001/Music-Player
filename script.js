@@ -2,9 +2,12 @@ const canvas = document.getElementById("myCanvas")
 const context  = canvas.getContext("2d")
 
 const width = 1000;
-const height = 200;
+const height = 150;
 canvas.width = width
 canvas.height= height
+
+// context.fillStyle = "yellow"
+//     context.fillRect(0,0,1000 ,100)
 
 context.fillStyle = "lightPink"
 let arr = Array.from({length: 1000}, () => Math.floor(Math.random() * 100));
@@ -17,7 +20,9 @@ for(let i=0;i<arr.length;i++){
     context.fillRect(i,100,5,-arr[i])
     i = i+5
 }
-    // context.fillRect(100,10,10,100)
+
+    // context.fillStyle = "black"
+    // context.fillRect(0,0 ,100 ,100)
 
 const musicContainer = document.querySelector('.music-container')
 const playBtn = document.getElementById('play');
