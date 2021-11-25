@@ -40,7 +40,7 @@ const durTime = document.querySelector('#durTime');
 
 // song titles
 
-const songs = ['Pehchandi Ni','summer','Mainu Nai Pehchaandi']
+const songs = ["Kar Har Maidan Fateh" , "Believer","Soorma Anthem","Pehchandi Ni"]
 
 // keep tract of songs
 
