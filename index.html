@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,45 +11,45 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Music Player</title>
-</head>
-<body>
-  <div class="canvas_div progress-container" id="progress-container">
-    <div class="tags">
-      <div class="tag1">
-        <div class="part1">Introduction</div>
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-      <div class="tag2">
-        <div class="part1">One_six</div>
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-      <div class="tag3">
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-      <div class="tag4">
-        <div class="part1">Profile</div>
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-      <div class="tag5">
-        <div class="part1">Rapport Building-Empathy</div>
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-      <div class="tag6">
-        <div class="part1">Rapport Building-Energy</div>
-        <div class="part2"></div>
-        <div class="part3"></div>
-      </div>
-    </div>
-    <div class="progress" id="progress">
-
-      <!-- using canvas to create a Progress br -->
-      <canvas id="myCanvas" ></canvas>
+  </head>
+  <body>
+    <div class="canvas_div progress-container" id="progress-container">
+      <!-- Tags -->
+      <div class="tags">
+        <div class="tag1">
+          <div class="part1">Introduction</div>
+          <div class="part2"></div>
+          <div class="part3"></div>
         </div>
+        <div class="tag2">
+          <div class="part1">One_six</div>
+          <div class="part2"></div>
+          <div class="part3"></div>
+        </div>
+        <div class="tag3">
+          <div class="part2"></div>
+          <div class="part3"></div>
+        </div>
+        <div class="tag4">
+          <div class="part1">Profile</div>
+          <div class="part2"></div>
+          <div class="part3"></div>
+        </div>
+        <div class="tag5">
+          <div class="part1">Rapport Building-Empathy</div>
+          <div class="part2"></div>
+          <div class="part3"></div>
+        </div>
+        <div class="tag6">
+          <div class="part1">Rapport Building-Energy</div>
+          <div class="part2"></div>
+          <div class="part3"></div>
+        </div>
+      </div>
+      <div class="progress" id="progress">
+        <!-- using canvas to create a Progress br -->
+        <canvas id="myCanvas"></canvas>
+      </div>
     </div>
 
     <div class="music-container" id="music-container">
@@ -59,9 +59,15 @@
 
       <audio src="music/hey.mp3" id="audio"></audio>
 
+      <!-- image rotation -->
       <div class="img-container">
-        <img src="https://play-lh.googleusercontent.com/2X-H9MIopl01IozUi6mA5RDOn3_TVgqtGOVZij82aX-QlJCpEsGrozaNhz5Ve3kfpKo" alt="music-cover" id="cover" />
+        <img
+          src="https://play-lh.googleusercontent.com/2X-H9MIopl01IozUi6mA5RDOn3_TVgqtGOVZij82aX-QlJCpEsGrozaNhz5Ve3kfpKo"
+          alt="music-cover"
+          id="cover"
+        />
       </div>
+      <!-- buttons -->
       <div class="navigation">
         <button id="prev" class="action-btn">
           <i class="fas fa-backward"></i>
@@ -74,9 +80,7 @@
         </button>
       </div>
     </div>
-</body>
+  </body>
 
-<script src="script.js">
-   
-</script>
+  <script src="script.js"></script>
 </html>
